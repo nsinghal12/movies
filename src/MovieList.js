@@ -59,7 +59,7 @@ export default class MovieList extends React.Component {
 
   render() {
     return <div class='container'>
-      <input type='text' placeholder='search' onChange={this.getSearchText} />
+      <input type='number' placeholder='search' onChange={this.getSearchText} />
       <button className=' btn btn-primary' onClick={this.getSearchData}>Search</button>
 
        {this.state.data ? this.embedSearchResults() : null}
